@@ -60,7 +60,7 @@ function Login() {
             id="email"
             label="Email"
             name="email"
-            margin="normaal"
+            margin="normal"
             value={user.email}
             onChange={onChange}
           />

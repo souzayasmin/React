@@ -45,15 +45,12 @@ export default function CadastroScreen() {
         value={user.email}
         onChangeText={(value) => setUser({ ...user, email: value })}
         style={styles.input}
-        keyboardType="email-address"
-        autoCapitalize="none"
       />
       <TextInput
         placeholder="Senha"
         value={user.password}
         onChangeText={(value) => setUser({ ...user, password: value })}
         style={styles.input}
-        secureTextEntry
       />
       <TextInput
         placeholder="Nome"
@@ -62,7 +59,7 @@ export default function CadastroScreen() {
         style={styles.input}
       />
       <TextInput
-        placeholder="Data de Nascimento (AAAA-MM-DD)"
+        placeholder="Data de Nascimento (DD-MM-AAAA)"
         value={user.data_nascimento}
         onChangeText={(value) => setUser({ ...user, data_nascimento: value })}
         style={styles.input}
